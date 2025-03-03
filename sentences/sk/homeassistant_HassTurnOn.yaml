@@ -9,6 +9,7 @@ intents:
           domain:
             - binary_sensor
             - cover
+            - fan
             - light
             - scene
             - script
