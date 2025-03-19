@@ -318,7 +318,7 @@ tests:
         device_class: "garage_door"
         name: "Garážové dvere"
         state: "off"
-    response: "Áno"
+    response: "Nie"
 
   # Plyn
   - sentences:
@@ -747,9 +747,9 @@ tests:
       name: HassGetState
       slots:
         domain: binary_sensor
-        device_class: opening
+        device_class: door
         state: "on"
-    response: "0"
+    response: "Žiadne"
 
   # Zásuvka
   - sentences:

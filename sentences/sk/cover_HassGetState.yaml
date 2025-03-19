@@ -35,10 +35,13 @@ intents:
           domain: cover
         response: all
 
+      # nechceme matchovat okná a dvere, nakoľko to môžu byť aj v doméne binary_sensor (neovládateľné)
       - sentences:
-          - "<which> {cover_classes:device_class} [<area_floor>] (<is>|sa) {cover_states:state}" # ktoré rolety (na poschodí) sa zatvárajú?
+          - "<which> {pure_cover_classes:device_class} [<area_floor>] (<is>|sa) {cover_states:state}" # ktoré rolety (na poschodí) sa zatvárajú?
+
         slots:
           domain: cover
+
         response: which
 
       - sentences:
